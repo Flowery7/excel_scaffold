@@ -18,4 +18,4 @@ Allow: /assets/js/
 Allow: /images/
 
 # Sitemap location for better crawling and indexing
-Sitemap: https://flowery7.github.io/excel_scaffolding/sitemap.xml
+Sitemap: https://flowery7.github.io/excel_scaffold/sitemap.xml
