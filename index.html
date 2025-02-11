@@ -95,81 +95,64 @@
     color: white;
 }
 
-         /* Navbar styling with semi-transparent background */
-        .navbar {
-            background-color: rgba(255, 255, 255, 1) ;/* Semi-transparent background */
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            padding: 10px 0;
-            transition: background-color 0.3s;
-        }
-
-        .navbar-nav a {
-            color: #266AA2;
-            font-weight: 500;
-            text-transform: none;
-            font-size: 1.1rem;
-            padding: 10px;
-        }
-
-        .navbar-nav a:hover,
-        .navbar-nav .active {
-            color: #B08D4E;
-        }
-
-        .btn-custom-navbar {
-            background-color: #266AA2;
-            color: white;
-            border-radius: 20px;
-            padding: 5px 15px;
-            font-size: 1.1rem;
-            font-weight: 500;
-            border: none;
-        }
-
-        .btn-custom-navbar:hover {
-            background-color: #80425e;
-            color: white;
-        }
-
-
-.navbar-toggler {
-    border: none; /* Remove the border around the toggle button */
-}
-
-.navbar-toggler-icon {
-    background-image: none; /* Remove the default icon styling */
-    background-color: white; /* Set the icon color to white */
-    width: 30px; /* Adjust size if needed */
-    height: 3px; /* Height of the hamburger bar */
-    display: block;
-    position: relative;
-}
-
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after {
-    content: '';
-    display: block;
-    background-color: white;
-    height: 3px; /* Same as the main bar height */
-    width: 30px; /* Same as the main bar width */
-    position: absolute;
+       
+/* Navbar styling with semi-transparent background */
+.navbar {
+    background-color: rgba(255, 255, 255, 1); /* Solid background */
+    position: fixed;
+    top: 0;
     left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    transition: background-color 0.3s;
 }
 
-.navbar-toggler-icon::before {
-    top: -8px; /* Position above the main bar */
+/* Navigation links */
+.navbar-nav a {
+    color: #266AA2;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 1.1rem;
+    padding: 10px;
 }
 
-.navbar-toggler-icon::after {
-    top: 8px; /* Position below the main bar */
+.navbar-nav a:hover,
+.navbar-nav .active {
+    color: #B08D4E;
 }
 
-.navbar-toggler:hover .navbar-toggler-icon {
-    background-color: white; /* Keep white on hover */
+/* Custom button styling */
+.btn-custom-navbar {
+    background-color: #266AA2;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+}
+
+.btn-custom-navbar:hover {
+    background-color: #80425e;
+    color: white;
+}
+
+/* Ensure the navbar toggler remains visible */
+.navbar-toggler {
+    border: none; /* Remove default border */
+    padding: 5px 10px;
+}
+
+/* Keep Bootstrap’s default toggler icon but modify its color */
+.navbar-toggler-icon {
+    filter: invert(100%); /* Makes the default Bootstrap icon white */
+}
+
+/* Toggler button hover effect */
+.navbar-toggler:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
 
