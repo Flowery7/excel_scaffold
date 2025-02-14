@@ -705,6 +705,94 @@ Once the job is complete, we handle dismantling and clear-up, leaving your prope
   </div>
 </section>
 
+
+
+<div class="info-slider">
+    <div class="tabs">
+        <button class="tab" onclick="showCard(1)">1</button>
+        <button class="tab" onclick="showCard(2)">2</button>
+        <button class="tab" onclick="showCard(3)">3</button>
+        <button class="tab" onclick="showCard(4)">4</button>
+        <button class="tab" onclick="showCard(5)">5</button>
+    </div>
+    <div class="cards">
+        <div class="card" id="card-1">
+            <h3>The Importance of Quality</h3>
+            <p>Scaffolding is a crucial component of construction and maintenance work, providing safe and stable access to elevated areas. Whether for large-scale commercial projects or small home repairs, high-quality scaffolding is essential for both safety and efficiency. Falls from height remain one of the leading causes of workplace injuries in construction, making secure scaffolding a necessity. Properly designed and installed scaffolding reduces risks by offering stable footing, guardrails, and secure access points, ensuring workers can perform their tasks safely. </p>
+        </div>
+        <div class="card" id="card-2">
+            <h3>Safety at Heart</h3>
+            <p>Professional scaffolding companies adhere to strict safety regulations, ensuring their structures can withstand weight loads and environmental factors such as wind and rain.
+
+Beyond safety, well-constructed scaffolding improves efficiency. An unstable or poorly designed scaffold can slow down work, requiring frequent adjustments and increasing the likelihood of delays. In contrast, a high-quality scaffold allows workers to move freely, transport materials easily, and complete jobs faster.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h3>Constructed With Care.</h3>
+            <p>A well-planned scaffolding system provides accessibility to hard-to-reach areas, ensuring projects such as painting, roofing, and structural repairs can be completed with precision. Choosing an experienced scaffolding provider ensures that projects stay on schedule and meet safety compliance requirements. This is crucial when working with other tradesmen who may be working to deadlines and tight schedules.It gives them all the accessibility they would need to complete their work to the high standard you expect.</p>
+        </div>
+        <div class="card" id="card-4">
+            <h3>Why Choose Us?</h3>
+            <p>Many types of jobs require scaffolding, ranging from basic home improvements to large industrial projects. Construction workers rely on scaffolding for bricklaying, cladding, and installing windows on new builds. Roofers use scaffolding for repairs, chimney maintenance, and solar panel installations. Exterior painters and decorators need stable platforms to access tall buildings safely. Scaffolding is also essential for building maintenance and restoration, particularly for historic structures that require careful work at height.</p>
+        </div>
+        <div class="card" id="card-5">
+            <h3>Commercial Scaffold</h3>
+            <p>Industrial sites, including factories, warehouses, and bridges, often need specialized scaffolding solutions for inspections and repairs.
+
+Investing in high-quality scaffolding is critical for safety, efficiency, and compliance. It ensures a secure working environment, reduces delays, and prevents costly accidents. Whether for a small residential project or a large-scale commercial build, professional scaffolding services provide the foundation for safe and successful work at height. Always choose a reputable scaffolding provider that prioritizes safety, durability, and expertise to guarantee the best results.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+.info-slider {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.tab {
+    background: #88A4E3;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+}
+.tab:hover {
+    background: #6C8CD5;
+}
+.cards .card {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+}
+.cards .card.active {
+    display: block;
+}
+</style>
+
+<script>
+function showCard(cardNumber) {
+    document.querySelectorAll('.card').forEach(card => {
+        card.classList.remove('active');
+    });
+    document.getElementById('card-' + cardNumber).classList.add('active');
+}
+// Show the first card by default
+showCard(1);
+</script>
+
+
+
+    
 <!-- Gallery Section -->
 <section id="gallery" class="gallery-section">
     <div class="container">
